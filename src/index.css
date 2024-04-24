@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+    body {
+        @apply md:mx-16 lg:mx-24 xl:mx-36
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        @apply text-black font-rowdies
+    }
+    
+    p, input {
+        @apply text-black font-didact-gothic
+    }
+
+    button, a {
+        @apply text-white font-alegreya-sans
+    }
+
+}
+
+@layer components {
+
+    .contain-margin {
+        @apply mt-[72px] mb-4
+    }
+
+    .nav-bar {
+        @apply mr-1 md:mx-16 lg:mx-24 xl:mx-36
+    }
+
+    .nav-bar-text {
+        @apply font-acme text-[28px] text-white
+    }
+
+    .icon-image {
+        @apply w-[23px] h-[23px] object-contain m-1
+    }
+
+    .smaller-image {
+        @apply w-[55px] h-[55px] ss:w-[65px] ss:h-[65px] object-cover rounded-full border-[1px] border-primary-color
+    }
+
+    .small-image {
+        @apply w-[70px] h-[70px] ss:w-[90px] ss:h-[90px] object-cover rounded-full border-[1px] border-primary-color
+    }
+
+    .medium-image {
+        @apply h-[120px] w-[120px] ss:h-[150px] ss:w-[150px] md:w-[180px] md:h-[180px] object-contain
+    }
+
+    .large-image {
+        @apply w-[150px] h-[150px] ss:w-[180px] ss:h-[180px] object-cover rounded-full border-[1px] border-primary-color
+    }
+
+    .pet-sales-image {
+        @apply w-[220px] h-[300px] object-cover rounded-xl
+    }
+
+    .pet-buy-image {
+        @apply w-[300px] h-[200px] ss:w-[400px] ss:h-[300px] md:w-[500px] md:h-[400px] object-cover rounded-xl
+    }
+
+    .title-text {
+        @apply text-[25px] font-extrabold mx-2
+    }
+
+    .sub-title-text {
+        @apply text-[20px] ss:text-[25px] font-extrabold sub-title-text-shadow
+    }
+
+    .sub-title-text-shadow {
+        text-shadow: 1px 1px 0px white;
+    }
+
+    .subject-text {
+        @apply text-[15px] text-center xs:text-start mx-2
+    }
+
+    .label-text {
+        @apply text-[13px] font-semibold
+    }
+
+    .rounded-button {
+        @apply bg-primary-color py-1.5 px-5 text-[15px] rounded-full w-max h-max hover:bg-purple-800
+    }
+
+    .rounded-full-w-button {
+        @apply rounded-button w-[75%] xs:w-[45%] ss:w-[40%] sm:w-[30%]
+    }
+
+    .card-text {
+        @apply text-[15px]
+    }
+
+    .text-shadow {
+        text-shadow: 1px 1px 0px black;
+    }
+
+    .box-shadow {
+        box-shadow: 1px 1px 3px darkgray, -1px -1px 3px darkgray;
+    }
+
+    .second-card-text {
+        @apply text-[16px] text-white text-shadow font-extrabold absolute bottom-1 left-3
+    }
+
+    .input-box {
+        @apply flex-1 text-[13px] py-1.5 pl-1 h-[40px] rounded-tr-lg rounded-br-lg
+    }
+
+    .input-layout {
+        @apply flex items-center rounded-lg border-[1px] border-primary-color
+    }
+
+    .search-error-image {
+        @apply w-[200px] h-[200px] object-contain
+    }
+
+}
