@@ -4,11 +4,6 @@ import celebrationIcon from "../../assets/svg_icons/ic_person_celebration.svg"
 
 const PetBoughtPage = () => {
 
-    function goToHomePage() {
-
-        history.go(-(history.length - 1))
-    }
-
     return(
         
         <section className="px-3 xs:px-5 ss:px-8 sm:px-12 md:px-16 lg:px-20 flex flex-col contain-margin">
@@ -27,8 +22,7 @@ const PetBoughtPage = () => {
                     {PET_BOUGHT_SUBJECT_TEXT}
                 </p>
 
-                <button className="rounded-full-w-button text-center mt-3"
-                    onClick={() => goToHomePage()}>
+                <button className="rounded-full-w-button text-center mt-3">
                     {PET_BOUGHT_BUTTON_TEXT}
                 </button>
             </div>

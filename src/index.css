@@ -85,7 +85,7 @@
     }
 
     .rounded-button {
-        @apply bg-primary-color py-1.5 px-5 text-[15px] rounded-full w-max h-max hover:bg-purple-800
+        @apply bg-primary-color py-1.5 px-5 text-[15px] font-bold rounded-full w-max h-max hover:bg-purple-800
     }
 
     .rounded-full-w-button {
